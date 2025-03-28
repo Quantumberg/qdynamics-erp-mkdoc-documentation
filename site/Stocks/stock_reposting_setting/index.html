@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#stock-reposting-settings" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1275,6 +1280,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1304,6 +1311,28 @@
   
   <span class="md-ellipsis">
     Stock Reports
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stock_adjustment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock Adjustment / COGS with Negative Stock
     
   </span>
   
@@ -1481,9 +1510,17 @@
 
 
 
-  <h1>Stock Reposting Settings</h1>
-
-
+<h1 id="stock-reposting-settings">Stock Reposting Settings</h1>
+<p><strong>Limit timeslot for Stock Reposting</strong></p>
+<p>If you want to run the reposting in a specific time then you can enable the checkbox "Limit timeslot for Stock Reposting". With this configuration you can avoid deadlock issues which occurs during the reposting.</p>
+<p><strong>Limits don't apply on</strong> 
+If you want to run the reposting full day and not on a specific time, especially when you have weekly off then you can use this configuration.</p>
+<p><strong>Use Item Based Reposting</strong> 
+This option is helpful when you want to speed up reposting. The system skips reposting for duplicate items and warehouses to improve speed.</p>
+<p><strong>Do reposting for each Stock Transaction</strong> 
+The system creates a reposting record for backdated entries. This means that the system only generates a reposting record if a future transaction exists for the same item and warehouse. We have seen cases where system has not created reposting entry for backdated transaction because of concurrency issues. So to solve them added this option which won't check whether the future transaction exists for the same item and warehouse to make reporting record. This is also added for an audit purpose.</p>
+<p><strong>Notify Reposting Error to Role</strong> 
+If reposting fails due to any issues, the system sends emails to the system managers. If you don't want to send failure emails to the system managers, you can configure a role, and the system will then send the email to the users assigned to that respective role.</p>
 
 
 

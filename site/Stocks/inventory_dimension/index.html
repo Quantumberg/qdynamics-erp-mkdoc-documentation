@@ -16,7 +16,7 @@
     
     
       
-        <title>Inventory dimension - Project Management document</title>
+        <title>Inventory Dimension - Project Management document</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#inventory-dimension" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Inventory dimension
+              Inventory Dimension
             
           </span>
         </div>
@@ -1309,6 +1314,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../stock_adjustment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock Adjustment / COGS with Negative Stock
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../stock_closing_entry/" class="md-nav__link">
         
   
@@ -1469,9 +1496,45 @@
 
 
 
-  <h1>Inventory dimension</h1>
-
-
+<h1 id="inventory-dimension">Inventory Dimension</h1>
+<p>Inventory dimensions are used to track an inventory with multiple parameters. By default,it allows to track an inventory using warehouses, batches, and serial numbers. If users want to track inventory with custom parameters then they can configure it using the Inventory Dimension feature. The user gets an option to select the Inventory Dimension on respective inventory documents as well in the stock ledger and stock balance report. With this feature, you can view dimension-wise stock ledger and stock balance reports.</p>
+<p>To access the Inventory Dimension list, go to:</p>
+<p><code>Stock &gt; Settings &gt; Inventory Dimension</code></p>
+<p><strong>Create Inventory Dimension</strong> </p>
+<ol>
+<li>Create a new record and select the Reference Document which you want to use as a custom Inventory Dimension.</li>
+<li>You can select any non-child document in the reference document.</li>
+<li>Next, the user has to put the dimension name against which the system will create a custom link field in the Applicable Documents.</li>
+</ol>
+<p><strong>Applicable For Documents</strong></p>
+<p><strong>Apply to All Inventory Documents</strong></p>
+<ul>
+<li>It will be used to select the custom Dimension in the inventory-related documents.</li>
+<li>For example, the user has created Inventory Dimension with the name "Shelf" and enabled "Apply to All Inventory Document Types". Then the system will create the custom link field with the name "Shelf" in the inventory documents where Batch No and Serial No fields exist.</li>
+</ul>
+<p><strong>Apply to Specific Document</strong></p>
+<ul>
+<li>If the user wants to add Inventory Dimension to a specific document then they have to disable the checkbox "Apply to All Inventory Document Types" and select the respective document in the "Applicable to Document" field.</li>
+<li>Also if you want to add Inventory Dimension for a specific condition like for stock entry type Issue you want separate dimension as "From Shelf" and stock entry type Material Receipt you want separate dimension as "To Shelf" then that can be possible using "Applicable Condition"</li>
+<li>Applicable Condition only can be visible if "Apply to All Inventory Document Types" is disabled</li>
+<li>You can also use the "Type of Transaction" with options such as Inward or Outward for a condition.</li>
+</ul>
+<p><strong>Use of Inventory Dimension</strong> </p>
+<ul>
+<li>Once the Inventory Dimension is created system will create the custom field in respective documents</li>
+<li>User gets an option to select the Inventory Dimension in the respective transaction.</li>
+<li>For example, if the user has added Inventory Dimension as "Shelf" in the Stock Entry Detail document. Then in the stock entry, the child table user gets an option to select shelf (see above image). Post submission of the stock entry system will create the stock ledgers with selected inventory dimensions.</li>
+</ul>
+<p><strong>Validate Negative Stock</strong> </p>
+<p>If user has enabled the "Validate Negative Stock" checkbox in the inventory dimension, system will not allow to make stock transactions if the respective dimensions has negative stock in the respective warehouse. If user has tried to create the stock transaction with negative stock for the inventory dimension then system will throw the below error</p>
+<p><strong>Stock Balance and Stock Ledger Report</strong></p>
+<ul>
+<li>Users can able to filter the Stock Balance and Stock Ledger report using Inventory Dimension</li>
+<li>With this feature, users can able to see Inventory Dimension wise available quantity</li>
+</ul>
+<p><strong>Stock Balance Report</strong> </p>
+<p>Note:</p>
+<p>User can only use the stock reconciliation with inventory dimensions to enter opening values and they can't use the stock reconciliation to modify the available stock or the valuation. Since we are not maintaining inventory dimensions wise valuation rate there is not sense to allow to modify valuation rate through stock reconciliation. in case if they tried to update the quantity or valuation rate through stock reconciliation, system will throw the below error</p>
 
 
 

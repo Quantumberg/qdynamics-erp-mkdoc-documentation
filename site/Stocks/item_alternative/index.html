@@ -16,7 +16,7 @@
     
     
       
-        <title>Item alternative - Project Management document</title>
+        <title>Item Alternative - Project Management document</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#item-alternative" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Item alternative
+              Item Alternative
             
           </span>
         </div>
@@ -1309,6 +1314,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../stock_adjustment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock Adjustment / COGS with Negative Stock
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../stock_closing_entry/" class="md-nav__link">
         
   
@@ -1469,9 +1496,30 @@
 
 
 
-  <h1>Item alternative</h1>
-
-
+<h1 id="item-alternative">Item Alternative</h1>
+<p><strong>An Item Alternative is an Item similar to the original one and can be used instead of the original Item in manufacturing.</strong></p>
+<p>If the raw material defined in the BOM is not available during the production process then their respective available alternative Item can be used to complete the production process.</p>
+<p>First you need to enable the "Allow Alternative Item" in the Item. Item</p>
+<p>To access the Item alternative list, go to:</p>
+<p><code>Home &gt; Stock &gt; Items and Pricing &gt; Item Alternative</code></p>
+<p>This can also be done by clicking the plus sign next to 'Item Alternative' from the Item master dashboard. You can enable Two-Way replacement between an Item and their alternative item if both can be used as an alternative to each other.</p>
+<p><strong>1. Prerequisites</strong></p>
+<p>Before creating and using an Item Alternative, it is advised that you create the following first:</p>
+<ul>
+<li>Item</li>
+</ul>
+<p><strong>2. Item Alternative for Work Order</strong></p>
+<p>To allow to using alternative Items in the manufacturing process, the user can configure to 'Allow Alternative Item' in the BOM/Work Order</p>
+<p><strong>2.1 Provision to allow alternative item in the BOM</strong></p>
+<p>You can enable 'Allow Alternative Item' in a BOM then select the alternative item in the Stock Entry. This can also be done with a Work Order. Item</p>
+<p><strong>2.2 Provision to allow alternative item in the Work Order</strong></p>
+<p>User can also enable/disable allow alternative item for individual Work Orders. Item</p>
+<p>Ticking on the 'Allow Alternative Item' checkbox will show a button named 'Alternate Item'. You can click on this to set the Item Alternative in the Work Order. This is how you use Item Alternative in a Work Order: Item</p>
+<p>This is how you use Item Alternative with a Stock Entry: Item</p>
+<p>If the 'Allow Alternative Item' checkbox in the Item table is disabled, you cannot set an Alternate Item for this Item.</p>
+<p><strong>2.3 Item Alternative for subcontract</strong></p>
+<p>In subcontract, the user has to transfer raw materials to the subcontracted supplier to get finished good from them. If the raw material is not available in the stock, with this feature, the user can transfer the alternate item of the subcontracted raw material to the supplier. This is done in the Stock Entry.</p>
+<p>After this, when you create a Purchase Receipt from the Work Order, the alternate item will be shown.</p>
 
 
 
