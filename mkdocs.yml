@@ -1,0 +1,83 @@
+site_name: Project Management document
+# theme: readthedocs
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate  # Table of contents on the right
+  palette:
+    scheme: default
+    # primary: blue
+    # accent: light blue
+  # font:
+  #   text: Roboto
+  #   code: Roboto Mono
+  # logo: assets/logo.png  # Update with your logo
+  # favicon: assets/favicon.ico  # Update with your favicon
+
+nav:
+  - Introduction:
+      - Project: 
+          - Introduction to Project : index.md
+          - Time Based Payout : Project/time_based_payout.md 
+          - Project Report : Project/project_report.md
+          - Project Essentials : Project/project_essentials.md
+          - Time Tracking : Project/time_tracking.md
+      - Users and Permissions:
+          - Users : Users_Permissions/users.md
+          - Permissions : Users_Permissions/permissions.md
+      - CRM Management :
+          - Introduction to CRM : crm.md
+          - Lead: CRM/lead.md
+          - Opportunity : CRM/opportunity.md
+          - Customer : CRM/customer.md
+      - Buying :
+          - Introduction to Buying : Buying/Introduction_buying.md
+          - Supplier Essentials : Buying/supplier_essential.md
+          - Purchase Transactions : Buying/purchase_transac.md
+          - Supplier Scorecard : Buying/supplier_scorecard.md
+          - Buying Reports : Buying/buying_reports.md
+          - Buying Settings : Buying/buying_settings.md
+      - Selling :
+          - Introduction to Selling Module : Selling/intro_selling.md
+          - Selling Essentials : Selling/selling_essentials.md
+          - Selling Transactions : Selling/selling_transaction.md
+          - Point of Sale : Selling/point_of_sale.md
+          - Selling Settings : Selling/selling_settings.md
+          - Sales Reports : Selling/sales_reports.md
+          - Delivery Note : Selling/delivery_note.md
+      - Stock :
+          - Introduction Stock Module : Stocks/intro_stock.md
+          - Stock Masters : Stocks/stock_masters.md
+          - Warehouse : Stocks/warehouse.md
+          - Pricing : Stocks/pricing.md
+          - Rules : Stocks/rules.md
+          - Stock Transactions : Stocks/stock_transaction.md
+          - Stock Inspection : Stocks/stock_inspection.md
+          - Serial and Batch : Stocks/serial_batch.md
+          - Disassembly Order : Stocks/disassembly_order.md
+          - Stock Settings : Stocks/stock_settings.md
+          - Stock Reposting Settings : Stocks/stock_reposting_setting.md
+          - Stock Reports : Stocks/stock_reports.md
+          # - Stock Adjustment / COGS with Negative Stock : Stocks/stock_adjustment.md
+          - Stock Closing Entry : Stocks/stock_closing_entry.md
+      - Asset :
+          - Asset : Assets/intro_asset.md
+          - Asset Reports : Assets/asset_report.md
+          - Maintenance of Assets : Assets/maintenance_assets.md
+        
+
+
+
+# markdown_extensions:
+#   - pymdownx.highlight
+#   - pymdownx.superfences
+#   - pymdownx.tabbed
+#   - pymdownx.details
+#   - toc:
+#       permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
