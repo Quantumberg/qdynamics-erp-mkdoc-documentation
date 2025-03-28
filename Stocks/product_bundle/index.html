@@ -16,7 +16,7 @@
     
     
       
-        <title>Product bundle - Project Management document</title>
+        <title>Product Bundle - Project Management document</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#product-bundle" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Product bundle
+              Product Bundle
             
           </span>
         </div>
@@ -1309,6 +1314,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../stock_adjustment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock Adjustment / COGS with Negative Stock
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../stock_closing_entry/" class="md-nav__link">
         
   
@@ -1469,9 +1496,40 @@
 
 
 
-  <h1>Product bundle</h1>
-
-
+<h1 id="product-bundle">Product Bundle</h1>
+<p><strong>A Product Bundle is a master where you can list existing items which are bundled together and sold as a set (or bundle).</strong></p>
+<p>For instance, when you sell a smartphone, you need to ensure that the charger, cable, and sim ejector pin are delivered with it and stock levels of these items get affected. To address this scenario, you can create a Product Bundle for the main item, i.e. smartphone. Then list deliverable items i.e. smartphone + charger + cable + sim ejector pin as so-called "Child Items".</p>
+<p>A Product Bundle can be seen as a "Bill-of-Materials" on the Sales side.</p>
+<p>Following are the steps to set up a Product Bundle and using it in sales transactions.</p>
+<p>To access product bundle, go to:</p>
+<p><code>Home &gt; Selling &gt; Items and Pricing &gt; Product Bundle</code></p>
+<p><strong>1. Prerequisites</strong></p>
+<p>Before creating and using a Product Bundle, it is advised that you create the following first:</p>
+<ul>
+<li>Item</li>
+</ul>
+<p><strong>2. How to create a Product Bundle</strong></p>
+<ol>
+<li>Go to the Product Bundle list, click on Add Product Bundle.</li>
+<li>Select a Parent Item, create one if not already created. Make sure Maintain Stock unchecked when creating a Parent Item. eg: Dinner Set.</li>
+<li>Enter a price for the parent item, this will be fetched when making a transaction.</li>
+<li>You can enter a description for internal use.</li>
+<li>Enter the products to be bundled in the Items table and enter their quantities.</li>
+<li>Save.</li>
+</ol>
+<p><strong>2.1 Selecting Parent Item</strong></p>
+<p>In Product Bundle master, there are two sections. The "Parent Item" and a List of items to be shipped (Child Items).</p>
+<p>The "Parent Item" should be seen more like a vessel or virtual item and not a physical product. The "Parent Item" must be a non-stock item. To create a non-stock item you have to unmark "Maintain Stock" in the Item Form. This is a non-stock item because there is no stock maintained for it but only for the "Child Items".</p>
+<p>If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) and package them using Stock Entry Transactions.</p>
+<p><strong>2.2 Selecting Child Items</strong></p>
+<p>In the Items table, you have to list all the child items for which we maintain stock and is delivered to customer. Remember: The "Parent Item" is just virtual, so your main product (a smartphone in our example here) also has to be listed on the List of Child (or Package) Items.</p>
+<p><strong>3. Features</strong> </p>
+<p><strong>3.1 Product Bundle in the Sales Transactions</strong> 
+When making Sales transactions (Sales Invoice, Sales Order, Delivery Note) the Parent Item will be selected in the main item table.</p>
+<p>On selection of a Parent Item in the main item table, its child items will be fetched in Packing List table of the transaction. If child item is the serialized item, you will be able to specify its Serial No. in packing List table itself. On submission of the transaction, the system will reduce the stock level of child items from warehouse specified in Packing List table.</p>
+<p>Use Product Bundle to Manage Offers/Schemes:
+This was discovered when a customer dealing into nutrition products asked for a feature to manage offers like "Buy One Get One Free".</p>
+<p>To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered offer details with the item's image displaying the offer. The sellable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under this offer, the system deducted two quantities of product from Warehouse.</p>
 
 
 

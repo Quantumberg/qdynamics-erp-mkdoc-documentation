@@ -16,7 +16,7 @@
     
     
       
-        <title>Item variants - Project Management document</title>
+        <title>Item Variants - Project Management document</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#item-variants" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Item variants
+              Item Variants
             
           </span>
         </div>
@@ -1309,6 +1314,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../stock_adjustment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock Adjustment / COGS with Negative Stock
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../stock_closing_entry/" class="md-nav__link">
         
   
@@ -1469,9 +1496,31 @@
 
 
 
-  <h1>Item variants</h1>
-
-
+<h1 id="item-variants">Item Variants</h1>
+<p>An Item Variant is a version of an Item with different attributes like sizes or colors.</p>
+<p>Eg: Suppose t-shirt is an Item and it comes in different sizes and colors like small, medium, large and red, blue, green. Here the t-shirt will be considered as an Item template and each of the variations will be an Item Variant.</p>
+<p>A <em>blue</em> t-shirt in size <em>small</em> rather than just a t-shirt. Item variants let you treat the <em>small</em>, <em>medium</em>, and <em>large</em> versions of a t-shirt as variations of one Item 't-shirt'.</p>
+<p>Without Item variants, you would have to treat the <em>small</em>, <em>medium</em> and <em>large</em> versions of a t-shirt as three separate Items.</p>
+<p><strong>1. Using Item Variants</strong></p>
+<p>Variants can be based on two things:</p>
+<ul>
+<li>Item Attributes</li>
+<li>Manufacturers</li>
+</ul>
+<p>Tip: Once an item template is created, when you update this template, all the variants are also updated accordingly.</p>
+<p><strong>1.1 Creating the Item Variant Template</strong></p>
+<p>To use Item Variants, create an Item and tick 'Has Variants' under Variants.</p>
+<p>The Item then shall be referred to as a so-called 'Template'. Such a Template is not identical to a regular 'Item' any longer. For example, it (the Template) cannot be used directly in any transaction (Sales Order, Delivery Note, Purchase Invoice) itself.</p>
+<p>Only the Variants of the Item (<em>blue</em> t-shirt in size <em>small)</em> can be practically used. Therefore it would be ideal to decide whether an item 'Has Variants' or not directly when creating it. Has Variants</p>
+<p>On selecting 'Has Variants' a table will appear. Specify the variant attributes for the Item in the table. In case the attribute has Numeric Values, you can specify the range and create intervals based on the increment values. Valid Attributes</p>
+<p>Note: You cannot make Transactions against a 'Template'.</p>
+<p><strong>1.2 Creating the Item Variants Based on Item Attributes</strong></p>
+<p>To create 'Item Variants' against a 'Template' click on 'Create'. From there, choose whether to create a single variant or multiple. Single is simple where you create just one or more attributes and one Item will be created. When choosing multiple variants, tick the attributes and multiple items will be created. For example, if you choose Color: Red, Green and Size: Small, Medium, Large, 6 variants will be created.</p>
+<p><strong>1.3 Item Variants Based on Manufacturers</strong></p>
+<p>To setup variants based on Manufacturers, in your Item template, set "Variants Based On" as "Manufacturers" In this case, to create variants, click on Create &gt; Make Variant. The system will prompt you to select a Manufacturer. You can also optionally put in a Manufacturer Part Number.</p>
+<p>The naming of the variant will be based on the name (ID) of the template Item with a number suffix. e.g. "Screwdriver" will have variant "Screwdriver-1".</p>
+<p><strong>2. Update Item Variants Based on Template</strong></p>
+<p>Go to: Home &gt; Stock &gt; Items and Pricing &gt; Item Variant Settings. The fields displayed here will be copied over to the variants as well. By default, all fields are shown, delete any rows you don't want to be updated from the item template to the variants.</p>
 
 
 
