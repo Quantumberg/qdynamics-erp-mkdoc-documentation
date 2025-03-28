@@ -26,7 +26,7 @@ Details like Username and Language can also be changed.
 **2. Features** 
 
 **2.1 Setting Roles**
-After saving, you will see a list of roles and checkboxes next to them. Just check the roles you want the user to have and save the document. The roles have pre-defined permissions, to know more about roles, click here. You can set Role profiles to use as a template which selects multiple roles together.
+After saving, you will see a list of roles and checkboxes next to them. Just check the roles you want the user to have and save the document. The roles have pre-defined permissions, to know more about roles. You can set Role profiles to use as a template which selects multiple roles together.
 
 ![Setting Roles](../Images/user-2.png)
 
@@ -52,7 +52,7 @@ Ticking on 'Mute Sounds' will mute sounds that play on interacting with document
 * **Log out from all devices while changing Password:** When changing the user's password, this logs out the user from PC and any mobile device they may have logged into.
 
 **2.4 Document Follow** 
-With this option you can follow various documents in the system and get email notifications when they are updated. Know more here.
+With this option you can follow various documents in the system and get email notifications when they are updated.
 
 **2.5 Email Settings**
 
@@ -63,7 +63,7 @@ With this option you can follow various documents in the system and get email no
 
 **2.6 Email Inbox** 
 
-Subscribe the user to different mailing lists of your company from this section. Add a new row and select the mailing list to assign this user. For example, mailing lists can be jobs, support, sales, etc. To know more about Email Inbox, click here.
+Subscribe the user to different mailing lists of your company from this section. Add a new row and select the mailing list to assign this user. For example, mailing lists can be jobs, support, sales, etc.
 
 **2.7 Allow Module Access** 
 Users will have access to all modules for which they have role-based access. If you want to restrict access of certain modules for this user, un-check the modules from this list.

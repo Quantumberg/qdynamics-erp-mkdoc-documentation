@@ -60,7 +60,7 @@ nav:
           - Stock Settings : Stocks/stock_settings.md
           - Stock Reposting Settings : Stocks/stock_reposting_setting.md
           - Stock Reports : Stocks/stock_reports.md
-          # - Stock Adjustment / COGS with Negative Stock : Stocks/stock_adjustment.md
+          - Stock Adjustment / COGS with Negative Stock : Stocks/stock_adjustment.md
           - Stock Closing Entry : Stocks/stock_closing_entry.md
       - Asset :
           - Asset : Assets/intro_asset.md

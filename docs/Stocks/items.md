@@ -37,7 +37,7 @@ Before creating and using an Item, it is advised that you create the following f
 
 * **Disabled:** If you disable an Item, it cannot be selected in any transaction.
 Allow Alternative Item: Sometimes when manufacturing a finished good, specific material may not be available. If you tick this, you can create and select an alternative item from the Item Alternative list. To know more, visit the Item Alternative page.
-* **Maintain Stock:** If you are maintaining stock of this Item in your Inventory, ERPNext will make a stock ledger entry for each transaction of this item. Ensure to keep this option unchecked when creating a non-stock Item (make to order/engineer) or a service.
+* **Maintain Stock:** If you are maintaining stock of this Item in your Inventory, it will make a stock ledger entry for each transaction of this item. Ensure to keep this option unchecked when creating a non-stock Item (make to order/engineer) or a service.
 * **Include Item in Manufacturing:** This is for raw material Items that'll be used to create finished goods. If the Item is an additional service like 'washing' that'll be used in the BOM, keep this unchecked.
 * **Valuation Rate:** There are two options to maintain valuation of stock. FIFO (first in - first out) and Moving Average. To understand this topic in detail please visit Item Valuation, FIFO and Moving Average.
 * **Standard Selling Rate:** When creating an Item, entering a value for this field will automatically create an Item Price at the backend. Entering a value after the Item has been saved will not work. In this case, the Item Price is created from any transactions with the Item. The rate at which you'll sell the item. This will be fetched in Sales Orders and Sales Invoices.
@@ -74,7 +74,11 @@ Barcodes can be recorded in Items to quickly scan and add them in transactions. 
 
 A warranty period is a time period in which a purchased product may be returned or exchanged.
 
-* Weight UOM: The Unit of Measure for the item. This can be Nos, Kilo, etc. The Weight UoM which you use internally can be different from the purchase UoM. * Weight Per Unit: The actual weight per unit of the item. Eg: 1 kilo biscuits or 10 biscuits per pack. * Default Material Request Type: When you create a new Material Request for this item, the field set here will be selected by default in the new Material Request. This is also known as an 'indent'. * Valuation Method: Select the Valuation Method whether FIFO or Moving Average. Read Item Valuation methods to know more. * Allow negative stock: When checked the item will be allowed to go negative even if negative stock is disabled from Stock Settings. This is useful if you don't want to enable negative stock on high value items but few select low value items are allowed to go negative for few days.
+* Weight UOM: The Unit of Measure for the item. This can be Nos, Kilo, etc. The Weight UoM which you use internally can be different from the purchase UoM. 
+* Weight Per Unit: The actual weight per unit of the item. Eg: 1 kilo biscuits or 10 biscuits per pack. 
+* Default Material Request Type: When you create a new Material Request for this item, the field set here will be selected by default in the new Material Request. This is also known as an 'indent'. 
+* Valuation Method: Select the Valuation Method whether FIFO or Moving Average. Read Item Valuation methods to know more. 
+* Allow negative stock: When checked the item will be allowed to go negative even if negative stock is disabled from Stock Settings. This is useful if you don't want to enable negative stock on high value items but few select low value items are allowed to go negative for few days.
 
 **3.4 Automatic Reordering**
 
@@ -82,7 +86,7 @@ When the stock of an item dips under a certain quantity, you can set an automati
 
 * Check in (group): In which group warehouses to check the quantity of the item.
 * Request for: Which warehouse to stock the item reorder.
-* Re-order Level: When this quantity is reached, the reorder will be triggered. Re-order level can be determined based on the lead time and the average daily consumption. For example, you can set the reorder level of Motherboard at 10. When only 10 Motherboards are remaining in stock, the system will either automatically create a Material Request in your ERPNext account.
+* Re-order Level: When this quantity is reached, the reorder will be triggered. Re-order level can be determined based on the lead time and the average daily consumption. For example, you can set the reorder level of Motherboard at 10. When only 10 Motherboards are remaining in stock, the system will either automatically create a Material Request in your account.
 * Re-order Qty: The number of units to be reordered so that the sum of ordering cost and holding cost is at its minimum. The re-order quantity is based on the 'Minimum Order Qty' specified by the supplier and many other factors.
 
 For example, If reorder level is 100 items, your reorder quantity may not necessarily be 100 items. The Reorder quantity can be greater than or equal to the reorder level. It may depend upon lead time, discount, transportation and average daily consumption. * Material Request Type: The Material Request type with which the stock will be reordered. This depends whether you buy the Item, manufacture it yourself or transfer it between Warehouses.
@@ -91,7 +95,7 @@ Note: The Material Request is created at 12 midnight depending on the set reorde
 
 **3.5 Multiple Units of Measure**
 
-You can add alternate UoMs for an Item. If the default UoM in which you sell is numbers (NoS) but you receive it in Kilos, you can set an additional UoM with an appropriate conversion factor. For example, 500 Nos of screws = 1 Kilogram, so select Kilogram/Litre as UOM and set the conversion factor as 500. To know more about selling in different UoM, visit this page.
+You can add alternate UoMs for an Item. If the default UoM in which you sell is numbers (NoS) but you receive it in Kilos, you can set an additional UoM with an appropriate conversion factor. For example, 500 Nos of screws = 1 Kilogram, so select Kilogram/Litre as UOM and set the conversion factor as 500.
 
 **3.6 Serial Numbers**
 
@@ -113,7 +117,7 @@ A set of Items can be manufactured in batches. This is useful for moving the bat
 * Batch Number Series: Prefix that'll be applied to batch numbers. If you set 5x1SCR, then the first batch will be named like 5x1SCR00001 on first transaction/manufacture.
 * Automatically Create New Batch: If the batch number is not mentioned in transactions, then they will be automatically created according to a format like AAAA.00001. If you always want to manually create a batch number for this item, leave this field blank. This setting will override 'Naming Series Prefix' in Stock Settings. Batch numbers can be set to be generated automatically if you manufacture the Items or can be entered manually if it comes from an external manufacturer.
 * Has Expiry Date: If you tick this, the batch number will be created according to the expiry date. The expiry dates can be set in the 'Batch' master.
-* Retain Sample: To retain a minimum number of sample stock of the item. You need to set a Sample Retention Warehouse in Stock Settings for this. To know more, click here.
+* Retain Sample: To retain a minimum number of sample stock of the item. You need to set a Sample Retention Warehouse in Stock Settings for this.
 * Has Serial No: This is similar to Batch Number Series, it'll be created when you make transactions/manufacture. If you set Serial Number Series as AA, then on the first transaction a serial number like AA00001 will be created.
 
 `Tip: While entering an Item Code in an Items table, if the table requires inventory details, then depending on whether the entered item is batched or serialized, you can enter serial or batch numbers right away in a pop-up dialog.`
@@ -144,7 +148,7 @@ In this section, you can define Company-wide transaction-related defaults for th
 * Minimum Order Qty: The minimum quantity required for purchase transactions like Purchase Orders. If set, the system will not let you proceed with the purchase transaction if the item quantity in the purchase transaction is lesser than the quantity set in this field.
 * Safety Stock: “Safety Stock” is used in the report “Itemwise Recommended Reorder Level”. Based on Safety Stock, average daily consumption and the lead time, the system suggests Reorder Level of an item.
 
-Reorder Level = Safety Stock + (Average Daily Consumption * Lead Time) * Last Purchase Rate: The rate at which you last purchased this item using a Purchase Invoice will be displayed here. * Is Purchase Item: If unticked, you won't be able to use this item in purchase transactions. * Is Customer Provided Item: Checked if Item is provided by a customer and received through Stock Entry > Material Receipt. If Checked, Customer field is Mandatory as the default customer for Material Request. To know more visit this page. * Lead time * days: Lead time days are the number of days between ordering the Item and it to reach the Warehouse.
+Reorder Level = Safety Stock + (Average Daily Consumption * Lead Time) * Last Purchase Rate: The rate at which you last purchased this item using a Purchase Invoice will be displayed here. * Is Purchase Item: If unticked, you won't be able to use this item in purchase transactions. * Is Customer Provided Item: Checked if Item is provided by a customer and received through Stock Entry > Material Receipt. If Checked, Customer field is Mandatory as the default customer for Material Request. * Lead time * days: Lead time days are the number of days between ordering the Item and it to reach the Warehouse.
 
 **3.11 Supplier Details**
 

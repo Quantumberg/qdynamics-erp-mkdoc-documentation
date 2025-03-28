@@ -103,7 +103,16 @@ Setting 'Supply Raw Materials' option is useful for subcontracting where you pro
 * **Manufacturer:** If the Item is manufactured by a specific manufacturer, it can be added here. This will be fetched if set in the Item master.
 * **Quantity and Rate:** When you select the Item code, its name, description, and UOM will be fetched. The 'UOM Conversion Factor' is set to 1 by default, you can change it depending on the UOM received from the seller, more in the next section.
 
-'Price List Rate' will be fetched if a Standard Buying rate is set. 'Last Purchase Rate' shows the rate of the item from your last Purchase Order. Rate is fetched if set in the item master. You can attach an Item Tax Template to apply a specific tax rate to the item. * Item weights will be fetched if set in the Item master else enter manually. * Discount on Price List Rate: You can apply a discount on individual Items percentage-wise or on the total amount of the Item. Read Applying Discount for more details. * Item Weight: The Item Weight details per unit and Weight UOM are fetched if set in the Item master, else enter manually. * Accounting Details: The Expense account can be changed here you wish to. * Deferred Expense: If the expense for this Item will be billed over the coming months in parts, then tick on 'Enable Deferred Expense'. To know more, visit the Deferred Expense page. * Allow Zero Valuation Rate: Ticking on 'Allow Zero Valuation Rate' will allow submitting the Purchase Receipt even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier. * BOM: If there is a Bill of Materials created for the Item, it'll be fetched here. This is useful for reference when subcontracting. * Item Tax Template: You can set an Item Tax Template to apply a specific Tax amount to this particular Item. To know more, visit this page. * Page Break will create a page break just before this Item when printing.
+'Price List Rate' will be fetched if a Standard Buying rate is set. 'Last Purchase Rate' shows the rate of the item from your last Purchase Order. Rate is fetched if set in the item master. You can attach an Item Tax Template to apply a specific tax rate to the item. 
+* Item weights will be fetched if set in the Item master else enter manually. 
+* Discount on Price List Rate: You can apply a discount on individual Items percentage-wise or on the total amount of the Item. Read Applying Discount for more details. 
+* Item Weight: The Item Weight details per unit and Weight UOM are fetched if set in the Item master, else enter manually. 
+* Accounting Details: The Expense account can be changed here you wish to. 
+* Deferred Expense: If the expense for this Item will be billed over the coming months in parts, then tick on 'Enable Deferred Expense'. To know more, visit the Deferred Expense page. 
+* Allow Zero Valuation Rate: Ticking on 'Allow Zero Valuation Rate' will allow submitting the Purchase Receipt even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier. 
+* BOM: If there is a Bill of Materials created for the Item, it'll be fetched here. This is useful for reference when subcontracting. 
+* Item Tax Template: You can set an Item Tax Template to apply a specific Tax amount to this particular Item.  
+* Page Break will create a page break just before this Item when printing.
 
 **Update Stock**
 
@@ -143,7 +152,7 @@ Write off happens when the Customer pays an amount less than the invoice amount.
 
 **3.13 Terms and Conditions**
 
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, click here
+In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. 
 
 **3.14 Printing Settings**
 

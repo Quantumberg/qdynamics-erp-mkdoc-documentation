@@ -67,7 +67,7 @@ Now, when the Request for Quotation is saved, you can see in the Dashboard that 
 
 **3.5 Terms and Conditions**
 
-In Sales/Purchase transactions, there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions and they will appear when printing the document. To know about Terms and Conditions.
+In Sales/Purchase transactions, there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions and they will appear when printing the document. 
 
 **3.6 Print Settings**
 

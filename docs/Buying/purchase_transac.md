@@ -1,8 +1,8 @@
 # Purchase Transactions 
 
-**Purchase transactions in ERPNext encompass the various activities involved in acquiring goods or services from suppliers.**
+**Purchase transactions encompass the various activities involved in acquiring goods or services from suppliers.**
 
-These transactions typically include creating purchase orders to specify the items or services needed, receiving goods against these orders to update inventory levels, and processing purchase invoices for payment. Additionally, ERPNext facilitates communication with suppliers, tracks purchase history, and integrates with accounting modules for seamless financial management.
+These transactions typically include creating purchase orders to specify the items or services needed, receiving goods against these orders to update inventory levels, and processing purchase invoices for payment. Additionally, it facilitates communication with suppliers, tracks purchase history, and integrates with accounting modules for seamless financial management.
 
 * <ins>[Material Request](material_request.md)</ins>
 * <ins>[Purchase Order](purchase_order.md)</ins>

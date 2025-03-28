@@ -26,7 +26,7 @@ Examples of Document Types are Sales Invoice, Leave Application, Stock Entry, et
 
 * **Permission Levels:** In each document, you can group fields by "levels". Each group of fields is denoted by a unique number (0 to 9). A separate set of permission rules can be applied to each field group. By default, all fields are of level 0.
 
-Permission "Level" connects fields with level X to a permission rule with level X. To know more click here.
+Permission "Level" connects fields with level X to a permission rule with level X.
 
 * **Document Stages:** Permissions are applied on each stage of the document like Creation, Saving, Submission, Cancellation, and Amendment. A role can be permitted to Print, Email, Import or Export data, access Reports, or define User Permissions.
 

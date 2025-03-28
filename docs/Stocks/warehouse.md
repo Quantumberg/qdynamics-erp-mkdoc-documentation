@@ -50,4 +50,4 @@ Here, if you enable Perpetual Inventory, every Warehouse must belong to a specif
 
 If you have a more detailed Warehouse Tree, most likely it's a good idea to link the sub-locations (room, row, shelf, etc.) to the account of the actual Warehouse (the root Warehouse of that Tree) as most scenarios do not require to account for value of stock items per Shelf or Bin. For example, if you have Warehouse A, and the room, rows are B, C, etc., then link B and C to the account of A.
 
-`Tip: ERPNext maintains stock balance for every distinct combination of Item and Warehouse. Thus you can get the stock balance for any specific Item in a particular Warehouse on any particular date.`
+`Tip: This software maintains stock balance for every distinct combination of Item and Warehouse. Thus you can get the stock balance for any specific Item in a particular Warehouse on any particular date.`

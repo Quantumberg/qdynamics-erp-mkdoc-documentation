@@ -18,7 +18,7 @@ The default unit of measure for stock is set as numbers (Nos), it can be changed
 Set the default Warehouse from which the stock transactions are done. This will be fetched into the Default Warehouse in the Item master: Stock Settings
 
 **2.4 Sample Retention Warehouse** 
-This is the Warehouse where sample retentions are stored. To know more, visit this page.
+This is the Warehouse where sample retentions are stored. 
 
 **2.5 Default Valuation method** 
 FIFO - first in first out or moving average valuation for your items. The default method is FIFO. If you select Moving Average, new Items will be valuated on Moving Average. You can change this when creating new Items in the Item form. Once the Item is saved, the Valuation Method cannot be changed. Read more here.

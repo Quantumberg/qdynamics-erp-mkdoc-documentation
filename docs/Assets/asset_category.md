@@ -15,7 +15,7 @@ To access the Asset Category list, go to:
 **1. How to create an Asset Category**
 
 1. Enter a name for the Asset Category.
-2. Check 'Enable Capital Work in Progress Accounting' if you want to maintain records of assets under a temporary balance sheet account instead of the corresponding asset account. To know more, visit this page.
+2. Check 'Enable Capital Work in Progress Accounting' if you want to maintain records of assets under a temporary balance sheet account instead of the corresponding asset account.
 3. Save.
 
 **1.1 Additional options when creating an Asset Category**
@@ -28,7 +28,7 @@ Enable Capital Work in Progress Accounting: On enabling this, accounting entry f
 
 You can link a Finance Book if you report depreciation in different ways. You can enter the following fields:
 
-* **Depreciation Method:** Choose a depreciated method on which you'll record the depreciation of assets in this category. To know more, visit this page.
+* **Depreciation Method:** Choose a depreciated method on which you'll record the depreciation of assets in this category.
 * **Frequency of Depreciation (Months):** The number of months within which the depreciation will be booked. The asset may be scrapped after this period.
 * **Total Number of Depreciations:** The number of deprecations to be booked in the selected time frame.
 * **Rate of Depreciation:** The rate of deprecation applied over the selected period. This will be calculated based on the Depreciation Method selected.

@@ -54,7 +54,7 @@ You can learn more about allowing users to view projects here.
 **2.2. Start and End Dates** 
 
 * **Actual Start Date:** Basis the Actual Start of the project, tracked via Timesheets, the Actual Start Date and Time of the Project will get recorded automatically.
-* **Actual End Date:** Basis the Actual End of the project, tracked via the last update of the Timesheet, the Actual End Date and Time of the Project will get recorded automatically. To know more about Timesheets, click here.
+* **Actual End Date:** Basis the Actual End of the project, tracked via the last update of the Timesheet, the Actual End Date and Time of the Project will get recorded automatically.
 
 **2.3. Costing and Billing**
 

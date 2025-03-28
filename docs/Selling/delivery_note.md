@@ -14,7 +14,7 @@ Before creating and using a Delivery Note, it is advised that you create the fol
 
 * Sales Order
 
-Note: From version-13 onwards we have introduced immutable ledger which changes the rules for cancellation of stock entries and posting backdated stock transactions in ERPNext. Learn more here.
+Note: From version-13 onwards we have introduced immutable ledger which changes the rules for cancellation of stock entries and posting backdated stock transactions.
 
 **2. How to create a Delivery Note**
 
@@ -99,7 +99,7 @@ Read about Price Lists and Multi-Currency Transactions to know more.
 
 * Rate: The Rate is fetched if set in the Price List and the total Amount is calculated.
 
-* Item Tax Template: You can set an Item Tax Template to apply a specific Tax amount to this particular Item. To know more, visit this page.
+* Item Tax Template: You can set an Item Tax Template to apply a specific Tax amount to this particular Item.
 
 * The Item Weight details per unit and Weight UOM are fetched if set in the Item master.
 
@@ -113,7 +113,7 @@ The 'Available Qty at From Warehouse', 'Available Batch Qty at From Warehouse', 
 
 * Expense Account is the account from which the amount will be debited. Ticking on 'Allow Zero Valuation Rate' will allow submitting the Delivery Note even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
 
-* Accounting Dimensions help to tag each transaction with different Dimensions without the need for creating new Cost Centers. You need to create Accounting Dimensions first, to know more, visit this page.
+* Accounting Dimensions help to tag each transaction with different Dimensions without the need for creating new Cost Centers. You need to create Accounting Dimensions first.
 
 * Page Break will create a page break just before this Item when printing.
 
@@ -145,7 +145,7 @@ Any additional discounts to the whole order can be set in this section. This dis
 
 **3.9 Terms and Conditions**
 
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, click here
+In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document.
 
 **3.10 Transporter Information**
 
@@ -181,7 +181,7 @@ You can print your Delivery Note on your company's letterhead.
 'Group same items' will group the same items added multiple times in the Items table. This can be seen when your print.
 
 **Print Headings** 
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a Print Heading. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more here.
+Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a Print Heading. To create new Print Headings go to: Home > Settings > Printing > Print Heading.
 
 There are additional checkboxes for printing the Delivery Note without the amount, this might be useful when the Item is of high value. You can also group the same Items in one row when printing.
 

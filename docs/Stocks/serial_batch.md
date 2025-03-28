@@ -7,10 +7,10 @@ However, batch tracking involves grouping items with identical attributes, such 
 
 Both serial and batch tracking functionalities provide businesses with granular control over inventory management, enhancing traceability, quality control, and compliance efforts.
 
-* Serial Number
-* Serial Number Naming
-* Batch
-* Serial and Batch Bundle
-* Serial Number Naming
-* Installation Notes
-* Managing Batch Wise Inventory
+* <ins>[Serial Number](serial_no.md)</ins>
+* <ins>[Serial Number Naming](serial_no_naming.md)</ins>
+* <ins>[Batch](batch.md)</ins>
+* <ins>[Serial and Batch Bundle](serial_batch_bundle.md)</ins>
+* <ins>[Serial Number Naming](serial_no_naming.md)</ins>
+* <ins>[Installation Notes](installation_notes.md)</ins>
+* <ins>[Managing Batch Wise Inventory](managing_batch_wise_inventory.md)</ins>
